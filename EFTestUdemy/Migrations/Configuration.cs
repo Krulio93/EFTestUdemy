@@ -1,18 +1,18 @@
+using System;
+using System.Data.Entity;
+using System.Data.Entity.Migrations;
+using System.Linq;
+
 namespace EFTestUdemy.Migrations
 {
-    using System;
-    using System.Data.Entity;
-    using System.Data.Entity.Migrations;
-    using System.Linq;
-
-    internal sealed class Configuration : DbMigrationsConfiguration<EFTestUdemy.Program.PlutoContext>
+    internal sealed class Configuration : DbMigrationsConfiguration<PlutoContext>
     {
         public Configuration()
         {
             AutomaticMigrationsEnabled = false;
         }
 
-        protected override void Seed(EFTestUdemy.Program.PlutoContext context)
+        protected override void Seed(PlutoContext context)
         {
             //  This method will be called after migrating to the latest version.
 

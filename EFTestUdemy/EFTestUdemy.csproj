@@ -58,6 +58,7 @@
       <DependentUpon>201811201429248_InitialModel1.cs</DependentUpon>
     </Compile>
     <Compile Include="Migrations\Configuration.cs" />
+    <Compile Include="Migrations\PlutoDbConfig.cs" />
     <Compile Include="Model\Author.cs" />
     <Compile Include="Model\Course.cs" />
     <Compile Include="Model\CourseLevel.cs" />
