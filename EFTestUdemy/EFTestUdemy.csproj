@@ -49,6 +49,15 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="Migrations\201811131541499_InitialModel.cs" />
+    <Compile Include="Migrations\201811131541499_InitialModel.Designer.cs">
+      <DependentUpon>201811131541499_InitialModel.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Migrations\201811201429248_InitialModel1.cs" />
+    <Compile Include="Migrations\201811201429248_InitialModel1.Designer.cs">
+      <DependentUpon>201811201429248_InitialModel1.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Migrations\Configuration.cs" />
     <Compile Include="Model\Author.cs" />
     <Compile Include="Model\Course.cs" />
     <Compile Include="Model\CourseLevel.cs" />
@@ -59,6 +68,14 @@
   <ItemGroup>
     <None Include="App.config" />
     <None Include="packages.config" />
+  </ItemGroup>
+  <ItemGroup>
+    <EmbeddedResource Include="Migrations\201811131541499_InitialModel.resx">
+      <DependentUpon>201811131541499_InitialModel.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Migrations\201811201429248_InitialModel1.resx">
+      <DependentUpon>201811201429248_InitialModel1.cs</DependentUpon>
+    </EmbeddedResource>
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>
